@@ -1,0 +1,409 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header-background{
+    width: 556.01px;
+height: 438px;
+margin-left:120px;
+transition: width;
+}
+
+.header-background:hover{
+    width:600px;
+    height: 500px ;
+}
+header{
+    background-color: #2D25A0;
+padding: 20px;
+padding-left:156px ;
+width: 100%;
+}
+/* NAV SECTION.....HERE */
+nav{
+   
+    display: flex;
+    justify-content: flex-end;
+    }
+    .fas{
+        color: white;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px ;
+        
+    }
+    
+    /*  */
+ 
+    .column h1{
+        color: white;
+        font-size: 50px;
+    }
+    .column a{
+      
+        text-decoration: none;
+        color: white;    
+    }
+    .anchor{
+        background-color: #c5135a;
+        padding: 10px 24px;
+    width: 168px;
+    height: 44px;
+    display: flex;
+    margin-right: 0;
+    color:white;
+    font-size: 16px;
+    margin-top: 50px;
+  
+    }
+    .right-arrow{
+        margin-left: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+    }
+
+    .top-section{
+        display: flex;
+        margin-top: 100px;
+    }
+    /* second section starts here.......... */
+    .player-part{
+        width: 1050px;
+        margin-top: 100px;
+        margin-right: 210px;
+    }
+    .player-frame{
+        border: 2px solid white;
+        background-color: white;
+        padding: 16px;
+        border-radius: 16px;
+        box-shadow: 1px 1px 40px white;
+    
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 27px 30px;
+        margin: 0 180px;
+        align-items: center;
+    }
+    .player img{
+        border-radius: 10px;
+        width: 100%;
+        height: 256px;
+        overflow: hidden;
+    }
+    .player img:hover{
+        transform: scale(1.1);
+        transition: transform 2s ease ;
+    }
+    .player-details{
+        border-radius: 10px;
+        width: 300px;
+        height: 154px;
+        padding: 5px;
+    }
+    .player-detail h2{
+        font-size: 28px;
+    }
+    
+/* about kick section starts  here */
+.about-kick{
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 600px 400px;
+    padding-top: 100px;
+padding-left:150px ;
+}
+
+.about-kick h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.about-kick p{
+color: lightgray;
+}
+
+
+.row1{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap :80px; ;
+    margin-top: 50px;
+}
+.col1{
+    margin-bottom: 50px;
+}
+/* match galary start here */
+.galary-title{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 80px;
+}
+.match-galary{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   grid-gap: 10px;
+    margin-top:50px ;
+    padding:10px 80px ;
+}
+.match-galary img{
+    height: 200px;
+    width: 300px;
+}
+/* footer starts here */
+footer{
+    text-align: center;
+    margin-top: 80px;
+}
+footer img{
+    width: 483.87px;
+height: 110px;
+
+}
+.social-menu ul{
+    display: flex;
+justify-content: center;
+}
+.social-menu ul li {
+    margin: 10px;
+    list-style: none;
+   
+}
+.fab{
+    font-size: 20px;
+    color: #969BAB;
+}
+
+
+
+/* for responsivr.............. */
+
+@media only screen and (max-width: 600px) {
+.menu{
+    flex-direction: column;
+}
+.menu a{
+    background-color: rosybrown;
+    color: black;
+    margin: 10px 0; 
+    text-align: center;
+}
+.column h1{
+    color: white;
+    font-size: 50px;
+}
+.column a{
+  
+    text-decoration: none;
+    color: white;    
+}
+.anchor{
+    background-color: #c5135a;
+    padding: 10px 24px;
+width: 168px;
+height: 44px;
+display: flex;
+margin-right: 0;
+color:white;
+font-size: 16px;
+margin-top: 50px;
+
+}
+.right-arrow{
+    margin-left: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+/* .top-section{
+    display: flex;
+    margin-top: 100px;
+}
+     */
+} 
+/*  responsive... for small devices........... */
+
+@media only screen and (max-width: 600px) {
+    .menu{
+        flex-direction: column;
+    }
+    .menu a{
+        background-color: rosybrown;
+        color: black;
+        margin: 10px 0; 
+        text-align: center;
+    }
+   .top-section{
+ flex-direction: column;
+
+ display: block;
+ width: 100%;
+   }
+   .column img{
+       width: 100%;
+       margin: 0;
+       padding: 0; 
+   }
+
+    /* for card design ............. */
+    .player-part{
+        width: 100%;
+    }
+     .players{
+         grid-template-columns: repeat(1, 1fr);
+         margin: 0;
+         padding: 0;
+         align-items: center;
+     }
+    /* about kick section responsive...... */
+   .about-kick{
+       flex-direction: column;
+       padding-left: 10px;
+   }
+   .about-kick-rightside{
+       display: grid;
+       grid-template-columns: 100%;
+     
+       width: 330px;
+        height: 474px;  
+   }
+
+
+
+/* match galary responsiveness. */
+     .match-galary{
+         flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 15px;
+        width: 300px ;
+     }
+    
+    footer img{
+        width: 383.87px;
+    height: 110px;
+    
+    }
+
+/* for tablet design */
+
+@media only screen and (min-width: 600px) and (max-width: 904px) {
+    .menu{
+        flex-direction: column;
+    }
+    .menu a{
+        background-color: rosybrown;
+        color: black;
+        margin: 10px 0; 
+        text-align: center;
+    }
+   .top-section{
+ flex-direction: column;
+ 
+ display: block;
+ width: 100%;
+   }
+   .column img{
+       width: 100%;
+       margin: 0;
+       padding: 0;
+    
+       
+   }
+    
+    /* for card design ............. */
+    .card-container{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+    /* about kick section responsive...... */
+   .about-kick{
+       flex-direction: column;
+       padding-left: 0;
+       padding-right: 10px;
+   }
+   .about-kick-rightside{
+       display: grid;
+       grid-template-columns: 100px;
+     
+       width: 330px;
+        height: 474px;
+       
+       
+   }
+.row1>.col1{
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+
+
+/* match galary responsiveness. */
+     .match-galary{
+         flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 15px;
+        width: 300px ;
+     }
+    
+    footer img{
+        width: 383.87px;
+    height: 110px;
+    
+    }
+
+
+}
+/*  <section class="card-container">
+            <!-- first card design.. -->
+            <div class="card">
+                <img src="images/players/player-2.png" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h1>Lionel Messi</h1>
+                    </div>
+                    <div class="card-desc">
+                        <p>Lionel Andrés Messi is an Argentine professional footballer who plays as a forward or an attacking midfielder and captains the Argentina national team.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd  card design -->
+            <div class="card">
+                <img src="images/players/player-3.png" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Cristiano Ronaldo</h3>
+                    </div>
+                    <div class="card-desc">
+                        <p>Cristiano Ronaldo dos Santos Aveiro GOIH ComM is a Portuguese professional footballer who plays as a forward for Serie A club Juventus and captain team</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd card  design-->
+            <div class="card">
+                <img src="images/players/player-1.png" alt="Avatar" style="width:100%">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Neymar Jr</h3>
+                    </div>
+                    <div class="card-desc">
+                        <p>Neymar da Silva Santos Júnior, known as Neymar, is a Brazilian professional footballer who plays as a forward for Ligue 1 club Paris.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> */

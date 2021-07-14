@@ -1,0 +1,10 @@
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+body{
+    background-color: brown;
+}
+
+.menu{
+    flex-direction: column;
+}
